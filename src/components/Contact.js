@@ -12,7 +12,6 @@ const Contact = () => {
       <p>
         I would be delighted to connect with you and discuss any potential
         opportunities or collaborations.
-        <br /> Feel free to reach out to me using any of the following methods:
       </p>
 
       <div className="contact">
@@ -39,7 +38,7 @@ const Contact = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.linkedin.com/in/brian-kipkemboi"
+                href="https://www.linkedin.com/in/brian-kipkemboi-aa949419a"
               >
                 {" "}
                 <LinkedIn className="icon" />
