@@ -1,0 +1,467 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.hello {
+  font-size: 27px;
+  font-family: "poppins";
+}
+
+/* .home {
+  background-color: rgba(255, 255, 255, 0.2);
+} */
+
+@keyframes animate {
+  0% {
+    background-position: 0% 25%;
+    transition: all 1.5s ease-in-out;
+    background-image: url("./img/background1.jpg");
+  }
+  25% {
+    background-position: 25% 50%;
+    transition: all 1.5s ease-in-out;
+    background-image: url("./img/background2.jpg");
+  }
+  50% {
+    background-position: 50% 75%;
+    transition: all 1.5s ease-in-out;
+    background-image: url("./img/background3.jpg");
+  }
+  100% {
+    background-position: 100% 0%;
+    transition: all 1.5s ease-in-out;
+    background-image: url("./img/background4.jpg");
+  }
+}
+.nav {
+  padding: 10px;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav ul .a {
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 24px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.nav a:hover {
+  background-color: green;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+}
+
+.section-header-small {
+  font-size: 19px;
+  font-family: "poppins";
+  font-weight: 550;
+  text-align: center;
+}
+.skill li {
+  font-weight: 500;
+}
+.toggler {
+  display: none;
+}
+
+.about-me {
+  font-size: 24px;
+  font-family: "poppins";
+}
+
+header {
+  padding-bottom: 40px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.inner {
+  padding-left: 10%;
+  opacity: 0.6;
+}
+.white {
+  background-color: white;
+}
+
+.my-name {
+  font-size: 22px;
+}
+.inner {
+  padding-top: 60px;
+}
+.bio img {
+  width: auto;
+  height: 500px;
+  padding-top: 10px;
+  border-radius: 8px;
+}
+
+.skill-section ul {
+  text-decoration: none;
+}
+.skill-section li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.skills {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skill ul {
+  padding: 20px;
+}
+
+.skill li {
+  padding: 10px;
+  gap: 10px;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 26px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.contact li {
+  font-size: 21px;
+}
+.btn {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: darkslateblue;
+  color: white;
+  border: none;
+  font-size: 22px;
+}
+.btn:hover {
+  background-color: green;
+  cursor: pointer;
+}
+.contact a {
+  vertical-align: middle;
+  padding: 30px;
+}
+.contact li {
+  vertical-align: middle;
+  padding: 30px;
+}
+
+#contact p {
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 24px;
+  word-spacing: 5px;
+  font-family: "poppins";
+}
+footer {
+  text-align: center;
+  bottom: 0;
+  padding-bottom: 60px;
+}
+footer p {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.bye-message {
+  font-family: "poppins";
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1317px) {
+  .about-me {
+    font-size: 20px;
+  }
+  .inner img {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .about-me {
+    font-size: 18px;
+  }
+  #contact p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  body {
+    background-size: contain;
+  }
+  .my-name {
+    font-size: 20px;
+  }
+
+  .bio img {
+    width: auto;
+    height: 250px;
+  }
+
+  .bye-message {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 752px) {
+  .my-name {
+    font-size: 16px;
+  }
+
+  .about-me {
+    font-size: 14px;
+  }
+  #contact p {
+    font-size: 18px;
+  }
+  #contact li {
+    font-size: 14px;
+  }
+
+  .bye-message {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 671px) {
+  .my-name {
+    font-size: 14px;
+  }
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .bio {
+    padding: 5px;
+  }
+  .bio img {
+    width: auto;
+    border-radius: 50%;
+    height: 100px;
+    height: 100px;
+  }
+  .about-me {
+    font-size: 14px;
+  }
+
+  #contact p {
+    font-size: 14px;
+  }
+
+  #contact li {
+    font-size: 14px;
+  }
+
+  .bye-message {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 614px) {
+  .inner {
+    opacity: 1;
+  }
+  .section-header-small {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+  .toggler {
+    display: block;
+    position: fixed;
+  }
+
+  .nav {
+    z-index: 2;
+    margin-top: 50px;
+    margin-left: -40px;
+    display: none;
+    text-align: left;
+    position: fixed;
+    background: #f9f9f6;
+    color: slateblue;
+    border-radius: 5px;
+    height: 27%;
+    transition: transform 250ms ease-in-out;
+  }
+  .nav ul {
+    display: inline-block;
+  }
+  .nav ul li {
+    text-align: left;
+    padding: 8px;
+    list-style: none;
+  }
+  .nav ul li .a {
+    text-transform: lowercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .a {
+    color: darkslateblue !important;
+  }
+  .nav a:hover {
+    background-color: green;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white !important;
+  }
+
+  input[type="checkbox"]:checked ~ #nav {
+    transform: translateX(0);
+  }
+
+  input[type="checkbox"] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  .sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 25px;
+    height: 32px;
+    width: 32px;
+  }
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: slateblue;
+  }
+  .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 6px;
+  }
+  .diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+  }
+  .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 6px;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 6px;
+  }
+  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bio {
+    padding-top: 10vh;
+    min-height: 60vh;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  .section-header-small {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .nav {
+    height: 25%;
+  }
+  .nav ul li .a {
+    font-size: 18px;
+  }
+}
