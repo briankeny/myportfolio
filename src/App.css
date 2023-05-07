@@ -181,18 +181,6 @@ header {
 .contact li {
   font-size: 21px;
 }
-.btn {
-  border-radius: 20px;
-  padding: 10px;
-  background-color: darkslateblue;
-  color: white;
-  border: none;
-  font-size: 22px;
-}
-.btn:hover {
-  background-color: green;
-  cursor: pointer;
-}
 .contact a {
   vertical-align: middle;
   padding: 30px;
@@ -439,8 +427,7 @@ footer p {
 
 @media screen and (max-width: 600px) {
   .bio {
-    padding-top: 10vh;
-    min-height: 60vh;
+    min-height: 70vh;
   }
 }
 

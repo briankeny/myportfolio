@@ -39,7 +39,7 @@ const Contact = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://www.linkedin.com/in/your-linkedin-profile"
+                href="https://www.linkedin.com/in/brian-kipkemboi"
               >
                 {" "}
                 <LinkedIn className="icon" />
