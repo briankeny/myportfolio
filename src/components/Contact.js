@@ -50,7 +50,7 @@ const Contact = () => {
         <div className="column">
           <ul>
             <li>
-              Github :{" "}
+              Github:{" "}
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -61,7 +61,7 @@ const Contact = () => {
             </li>
 
             <li>
-              Instagram :{" "}
+              Instagram:{" "}
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -72,7 +72,7 @@ const Contact = () => {
             </li>
 
             <li>
-              Twitter :{" "}
+              Twitter:{" "}
               <a
                 target="_blank"
                 rel="noreferrer"

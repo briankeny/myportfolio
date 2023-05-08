@@ -168,6 +168,7 @@ header {
 
 .contact {
   display: flex;
+  flex-wrap : nowrap;
   flex-direction: row;
   justify-content: space-evenly;
 }
@@ -421,18 +422,41 @@ footer p {
     transform: rotate(-135deg);
     margin-top: -9px;
   }
+ 
+
+.contact li {
+  margin-bottom : 40px;
+  font-weight: 500;
+  font-size: 20px;
+  vertical-align: middle;
+  padding: 2px;
+}
+.contact a {
+  vertical-align: middle;
+  padding: 8px;
+}
 }
 
 @media screen and (max-width: 600px) {
   .home {
     min-height: 70vh;
   }
+  .contact {
+   margin:0;
+   min-height: 300px;
+   justify-content : space-evenly;
+ }
+  
+.contact  .icon {
+   margin: 0;
+ }
+ 
  .skill li{
   font-size:12px;
 }
   #contact p{
   word-spacing:2px;
-  line-height: 1rem;
+  line-height: 1.5rem;
   font-size:14px;
  }
  .section-header-small {
