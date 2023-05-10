@@ -16,6 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#body {
+  min-height : 100vh;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -53,6 +57,7 @@ code {
   padding: 10px;
 }
 .nav ul {
+  padding-top:40px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -60,9 +65,10 @@ code {
 .nav ul .a {
   text-decoration: none;
   font-weight: 550;
-  font-size: 24px;
-  padding: 10px;
-  margin: 10px;
+  font-size: 25px;
+  color: green;
+  padding: 15px;
+  margin: 15px;
 }
 
 .nav a:hover {
@@ -232,9 +238,7 @@ footer p {
 }
 
 @media screen and (max-width: 810px) {
-  body {
-    background-size: contain;
-  }
+  
   .my-name {
     font-size: 20px;
   }
@@ -324,12 +328,13 @@ footer p {
     text-align: left;
     position: fixed;
     background: #f9f9f6;
-    color: slateblue;
+    color: green;
     border-radius: 5px;
     height: 27%;
     transition: transform 250ms ease-in-out;
   }
   .nav ul {
+    padding-top: 0px;
     display: inline-block;
   }
   .nav ul li {
@@ -338,18 +343,15 @@ footer p {
     list-style: none;
   }
   .nav ul li .a {
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
-  }
-  .a {
-    color: darkslateblue !important;
   }
   .nav a:hover {
     background-color: green;
-    border-radius: 3px;
+    border-radius: 4px;
     cursor: pointer;
     color: white !important;
   }
@@ -438,8 +440,8 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-  .home {
-    min-height: 70vh;
+  #body {
+    min-height: 100vh;
   }
   .contact {
    margin:0;

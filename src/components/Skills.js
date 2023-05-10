@@ -12,6 +12,8 @@ import { ReactComponent as Mysql } from "../img/mysql.svg";
 import { ReactComponent as Postgresql } from "../img/postgresql.svg";
 import { ReactComponent as Nodejs } from "../img/nodejs.svg";
 import { ReactComponent as Express } from "../img/express.svg";
+import { ReactComponent as S } from "../img/sql.svg";
+import { ReactComponent as Oracle } from "../img/oracle.svg";
 const Skills = () => {
   return (
     <div className="skill-section">
@@ -37,6 +39,9 @@ const Skills = () => {
             <li>
               <Cplus className="icon" /> C++
             </li>
+            <li>
+              <S className="icon" /> Sql
+            </li>
           </ul>
         </div>
 
@@ -48,12 +53,12 @@ const Skills = () => {
               <Rjs className="icon white" /> React
             </li>
             <li>
-              <Nodejs className="icon" />
+              <Nodejs className="icon white" />
               Node js
             </li>
             <li>
               <Express className="icon white" />
-              Express
+              Express js
             </li>
             <li>
               <Django className="icon" />
@@ -81,6 +86,11 @@ const Skills = () => {
             <li>
               <Postgresql className="icon" /> PostgreSQL
             </li>
+
+             <li>
+              <Oracle className="icon" /> Oracle
+            </li>
+
           </ul>
         </div>
       </div>

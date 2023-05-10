@@ -12,6 +12,7 @@ function App() {
   const [display, setDisplay] = useState({
     backgroundColor: "white",
     color: "black",
+    minHeight: "100vh"
   });
   useEffect(() => {
     if (night) {
