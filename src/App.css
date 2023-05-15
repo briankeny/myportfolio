@@ -94,28 +94,29 @@ code {
 .about-me {
   font-size: 24px;
   font-family: "poppins";
+  padding-left : 15px;
+  padding-right : 15px;
+  padding-bottom : 10px;
 }
 
 header {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .bio {
-  display: flex;
-  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin-top:20px;
-  justify-content: space-between;
-  gap: 10px;
-  flex-wrap: nowrap;
 }
+
 .inner {
-  padding-left: 10%;
-  opacity: 0.6;
+  opacity : 0.5;
 }
+
 .white {
   background-color: white;
 }
@@ -123,13 +124,11 @@ header {
 .my-name {
   font-size: 22px;
 }
-.inner {
-  padding-top: 60px;
-}
+
 .bio img {
+  float : left;
   width: auto;
   height: 500px;
-  padding-top: 10px;
   border-radius: 8px;
 }
 
@@ -284,8 +283,12 @@ footer p {
   .bio {
     padding: 5px;
   }
+  .inner {
+   padding-top : 30px;
+   }
   .bio img {
     width: auto;
+    margin-right: 10px;
     border-radius: 50%;
     height: 100px;
     height: 100px;

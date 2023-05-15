@@ -2,13 +2,13 @@ import Brian from "../img/brian.jpg";
 const Bio = () => {
   return (
     <div className="bio">
-      <div className="row inner">
+
+      <div className="inner">
         <img src={Brian} alt="brian-img" />
       </div>
-
-      <div className="row about-me">
-        <h2 className="hello">Hello &#128075; </h2>
-        <p>
+      <div>
+        <p className="about-me" >
+        <b className="hello">Hello &#128075; </b> <br/>
           I am <b className="my-name">Brian Keny</b>, a{" "}
           <b className="my-name">Software Engineer</b> with 3 + years of
           experience in designing, implementing, and testing software

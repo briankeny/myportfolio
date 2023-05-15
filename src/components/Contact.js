@@ -1,10 +1,12 @@
 import { ReactComponent as Github } from "../img/github.svg";
 import { ReactComponent as Instagram } from "../img/instagram.svg";
 import { ReactComponent as Twitter } from "../img/twitter.svg";
-
 import { ReactComponent as LinkedIn } from "../img/linkedin.svg";
 import { ReactComponent as Call } from "../img/call.svg";
 import { ReactComponent as Gmail } from "../img/gmail.svg";
+import { ReactComponent as Outlook } from "../img/outlook.svg";
+import { ReactComponent as WhatsApp } from "../img/whatsapp.svg";
+
 const Contact = () => {
   return (
     <section id="contact">
@@ -18,7 +20,7 @@ const Contact = () => {
         <div className="column">
           <ul>
             <li>
-              Message:{" "}
+              Gmail:{" "}
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -27,6 +29,13 @@ const Contact = () => {
                 <Gmail className="icon" />{" "}
               </a>
             </li>
+             <li>
+               Outlook:
+               <a href="mailto:brianarapkeny@outlook.com">
+               <Outlook className="icon" />
+                </a>
+             </li>
+
             <li>
               Call Me:{" "}
               <a target="_blank" rel="noreferrer" href="tel:+254721524154">
@@ -58,6 +67,12 @@ const Contact = () => {
               >
                 <Github className="icon white" />
               </a>
+            </li>
+            <li>
+             WhatsApp:
+             <a href="https://wa.me/254721524154">
+              <WhatsApp className="icon" />
+             </a>
             </li>
 
             <li>
