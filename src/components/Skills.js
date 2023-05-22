@@ -47,7 +47,7 @@ const Skills = () => {
 
         <div className="skill">
           <i className="fas fa-laptop-code"></i>
-          <h3 className="section-header-small">Frameworks and Libraries</h3>
+          <h3 className="section-header-small">Frameworks & Libraries</h3>
           <ul>
             <li>
               <Rjs className="icon white" /> React
@@ -84,13 +84,11 @@ const Skills = () => {
               <Mongo className="icon" /> MongoDB
             </li>
             <li>
-              <Postgresql className="icon" /> PostgreSQL
-            </li>
-
-             <li>
               <Oracle className="icon" /> Oracle
             </li>
-
+            <li>
+              <Postgresql className="icon" />PostgresSQL
+            </li>
           </ul>
         </div>
       </div>
