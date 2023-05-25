@@ -104,9 +104,11 @@ header {
 }
 
 .bio {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+  display : flex;
+  flex-direction : row;
+  gap: 3%;
+  min-width : 500px;
+  margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -128,7 +130,7 @@ header {
 .bio img {
   float : left;
   width: auto;
-  height: 500px;
+  height: 400px;
   border-radius: 8px;
 }
 
@@ -225,6 +227,10 @@ footer p {
     width: 400px;
     height: auto;
   }
+  .bio {
+   min-width: 450px;
+
+   } 
 }
 
 @media screen and (max-width: 1125px) {
@@ -246,7 +252,9 @@ footer p {
     width: auto;
     height: 250px;
   }
-
+  .bio {
+   min-width : 300px;
+  }
   .bye-message {
     font-size: 18px;
   }
@@ -264,12 +272,16 @@ footer p {
     font-size: 18px;
   }
   #contact li {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .bye-message {
     font-size: 16px;
   }
+  .skills .icon{
+   margin-left:0;
+   margin-right: 10px;
+   }
 }
 @media screen and (max-width: 671px) {
   .my-name {
@@ -286,6 +298,12 @@ footer p {
   .inner {
    padding-top : 30px;
    }
+  .bio{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
   .bio img {
     width: auto;
     margin-right: 10px;
@@ -302,12 +320,15 @@ footer p {
   }
 
   #contact li {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .bye-message {
     font-size: 14px;
   }
+  .skill ul  {
+   padding: 10px;
+   }
 }
 @media screen and (max-width: 614px) {
   .inner {
@@ -316,7 +337,7 @@ footer p {
   .section-header-small {
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
   }
   .toggler {
     display: block;
